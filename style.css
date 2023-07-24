@@ -1,0 +1,770 @@
+:root {
+    --orange: #DA722C;
+    --darkblue: #023047;
+    --black: #070917;
+    --lightcream: #E8F7FB;
+    /* --lightblue: #6F7DFB;
+    --darkskyblue:#26308C; */
+
+    --lightblue: #fbba6f;
+    --darkskyblue: #8c3e26;
+
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    margin: 0;
+
+}
+
+.btn {
+    font-size: 16px;
+    text-decoration: none;
+    padding: 16px 32px;
+    border-radius: 24px;
+    display: inline-block;
+    color: #E8F7FB;
+    position: relative;
+
+}
+
+.btn.lightorange {
+    background: var(--orange);
+}
+
+.btn.darkblue {
+    background: var(--darkblue);
+}
+
+.btn.penicon::before {
+    content: url(./imgs/pencil-icon.svg);
+    position: absolute;
+    top: 50%;
+    left: 22%;
+    transform: translateY(-50%)
+}
+
+.btn.penicon {
+    padding-left: 60px;
+}
+
+/* header */
+header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, var(--lightblue) 0%, var(--darkskyblue) 100%);
+}
+
+.wrapper {
+    max-width: 1134px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 25px;
+    width: 1134px;
+    ;
+    z-index: 100;
+    transition: all 500ms ease
+}
+
+nav.scrolled {
+    background: var(--black);
+    border-radius: 0px 0px 8px 8px;
+    padding: 12px;
+    top: 0px
+}
+
+nav .logo h2 {
+    color: #FFF;
+    font-family: "Raleway", sans-serif;
+    font-size: 40px;
+    font-weight: 899;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    color: #fff;
+    font-family: Poppins, sans-serif;
+    gap: 60px;
+    margin: 0;
+    line-height: 125%;
+}
+
+nav ul li a {
+    color: #fff;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.herrosection {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 60px;
+
+
+
+}
+
+.herrosection .left {
+    flex: 1;
+}
+
+.herrosection .left h1 {
+    color: #FFF;
+    font-family: "Raleway", "sans-serif";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 125%;
+    margin-bottom: 0px;
+}
+
+.herrosection .left p {
+    color: #FFF;
+    font-family: "Poppins", "Arial, Helvetica, sans-serif";
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    width: 457px;
+}
+
+
+.herrosection .right {
+    align-self: flex-end;
+
+}
+
+.herrosection .right img {
+
+    width: 446px;
+    height: 522px;
+    vertical-align: middle;
+
+}
+
+/* .cards {
+    /* display: none; */
+/* } */
+
+.achievment {
+    position: absolute;
+    display: flex;
+    align-items: center;
+
+}
+
+.achievment .content {
+    min-width: 206px;
+    border-radius: 24px;
+    background: var(--lightcream);
+    z-index: 100;
+}
+
+.achievment.studentcard {
+    left: 46%;
+    top: 348px
+}
+
+.achievment.ratingcard {
+    left: 44%;
+    top: 520px
+}
+
+.achievment h2 {
+    color: var(--darkblue);
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    margin: 0px;
+}
+
+
+
+.achievment .content p {
+    color: var(--darkblue);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: -8px;
+    margin-bottom: 9px;
+    text-align: center;
+}
+
+
+
+.ratingcard .content div {
+    display: flex;
+    width: 100;
+    justify-content: center;
+    gap: 12px
+}
+
+.achievment .bg {
+    border-radius: 24px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(180deg, var(--lightblue) 0%, var(--darkskyblue) 100%);
+    top: 8px;
+    left: 8px;
+    z-index: 1
+}
+
+/* ===testmonial */
+section {
+    margin-top: 100px;
+}
+
+h2 {
+    color: var(--darkblue);
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 900;
+    margin: 0px;
+}
+
+h2.light {
+    color: var(--lightcream);
+}
+
+.testmonial {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+session p {
+    color: var(--darkblue);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 12px 0px;
+}
+
+.testmonial .card {
+    position: relative;
+    border-radius: 24px;
+    background: #FFF;
+    width: 442px;
+    box-shadow: 0px 9px 36px 0px rgba(0, 0, 0, 0.20);
+    margin-bottom: 50px;
+
+}
+
+.testmonial .card .content {
+    color: #FFF;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    border-radius: 24px;
+    background: var(--lightblue);
+    padding: 24px 32px;
+}
+
+.testmonial .card:last-child .content {
+    background: var(--orange);
+}
+
+
+.testmonial .card .info h4 {
+    font-family: "Raleway", sans-serif;
+    color: var(--darkblue);
+    border-radius: 24px;
+    font-weight: 900;
+    margin: 0px;
+    line-height: 120%;
+
+}
+
+.testmonial .card .info {
+    padding: 24px 32px;
+    background-color: #FFF;
+}
+
+.testmonial .card .info p .comp {
+    color: var(--darkblue);
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.testmonial .card img {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    right: 32px;
+    bottom: 20px;
+}
+
+.testmonial .card:last-child {
+    transform: translateX(20px);
+}
+
+.testmonial .card::before {
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 40px;
+    background: var(--darkblue);
+    left: 60px;
+    top: -40px;
+    border-radius: 24px 24px 0px 0px;
+}
+
+.testmonial .card:last-child::before {
+    left: 40px;
+    top: -50px;
+    border-radius: 0px 0px 24px 24px;
+    height: calc(100% + 90px);
+    z-index: -1;
+}
+
+.testmonial .right .desktopbtn {
+    margin-top: 30px;
+}
+
+.testmonial .mobilebtn {
+    display: none;
+}
+
+/* ------------------- */
+.courses-section {
+
+    background: linear-gradient(180deg, var(--lightblue) 0%, var(--darkskyblue) 100%);
+    padding: 70px 0px;
+    position: relative;
+    padding-bottom: 120px;
+}
+
+.courses-section h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+
+}
+
+.courses-section .coursescards {
+
+    display: flex;
+    align-items: center;
+    gap: 70px
+}
+
+.courses-section .coursescards .card {
+
+    border-radius: 24px;
+    background: #FFF;
+    padding: 0px 32px;
+    position: relative;
+    margin: 40px 0px;
+    position: relative;
+}
+
+
+
+.courses-section .coursescards .card img {
+    border-radius: 24px;
+    width: 100%;
+    filter: box-shadow 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.courses-section .coursescards .card .info {
+
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: center;
+
+}
+
+.courses-section .coursescards .card .info h3 {
+    color: var(--darkblue);
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 150%;
+}
+
+.courses-section .coursescards .card .info .duration {
+    color: var(--darkblue);
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 150%;
+    position: relative;
+    padding-left: 20px;
+    /* 24px */
+}
+
+.courses-section .coursescards .card .info .duration::before {
+    content: url("./imgs/Clock.svg");
+    position: absolute;
+    top: 2px;
+    left: -6px;
+}
+
+.courses-section .coursescards .card::after {
+    content: '';
+    height: 8px;
+    left: 32px;
+    right: 32px;
+    bottom: 0px;
+    border-radius: 24px;
+    background: #023047;
+    position: absolute;
+}
+
+.courses-section .wrapper {
+    position: relative;
+}
+
+.courses-section a {
+    position: absolute;
+    right: 0px;
+}
+
+/* ==========app section */
+.app {
+    text-align: center;
+}
+
+.app h2 {
+    color: var(--darkblue);
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+    margin-bottom: 13px;
+}
+
+.app p {
+    color: var(--darkblue);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%;
+    /* 32px */
+}
+
+.app .btnstoreicon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 45px;
+}
+
+.app .btnstoreicon .storebtn {
+    width: 310px;
+    padding: 10px 31px 20px 0px;
+    align-items: center;
+    /* gap: 14px; */
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+
+}
+
+.app .btnstoreicon .storebtn span {
+    color: #FFF;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+/* 48px */
+/* ==================== */
+.footer {
+    background: var(--black);
+    /* height: 409px; */
+    padding-top: 70px;
+
+}
+
+.footer .footerlinks {
+    display: grid;
+    grid-template-columns: 2fr 2fr 3fr;
+
+}
+
+.footer .footerlinks .link h3 {
+    color: #DA722C;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.footer .footerlinks .link ul>li {
+    text-decoration: none;
+    list-style: none;
+    padding-left: 20px;
+    padding-top: 9px;
+}
+
+.footer .footerlinks .link ul>li a {
+    color: #FFF;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+
+}
+
+.footer .footerlinks .link .socials {
+    margin-top: 16px;
+    margin-left: 20px;
+
+}
+
+.footer .footerlinks .link .socials a {
+    margin-right: 28px;
+}
+
+.footer .wrapper p {
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 32px;
+}
+
+.footer form {
+
+    margin-left: 20px;
+    margin-top: 16px;
+    position: relative;
+}
+
+.footer .footerlinks .link form input {
+    font-family: 'Poppins', sans-serif;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #FFF;
+    padding: 6px 27px;
+    border: none;
+    color: black;
+    width: 100%;
+}
+
+.footer form button {
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    border-radius: 8px;
+    background: #023047;
+    color: #FFF;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* =============media query for tablet screen============= */
+
+@media (max-width:1100px) {
+    .btn {
+        padding: 12px 32px;
+    }
+
+    .wrapper {
+        padding: 0px 100px;
+    }
+
+    nav {
+        width: 100%;
+        left: 0px;
+        right: 0px;
+        padding: 30px 100px;
+    }
+
+    header .herrosection,
+    header .wrapper {
+        max-height: 1100px;
+    }
+
+    .herrosection {
+        flex-direction: column;
+    }
+
+    .herrosection .left {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .herrosection .left h1 {
+        font-size: 50px;
+        line-height: 125%;
+    }
+
+    .herrosection .left a {
+        align-self: flex-start;
+    }
+
+    .herrosection .right {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .herrosection .achievment {
+        position: relative;
+        margin-bottom: 80px;
+    }
+
+    .achievment.studentcard,
+    .achievment.ratingcard {
+        left: unset;
+        top: unset;
+
+    }
+
+    .herrosection .cards {
+        align-self: flex-start;
+        margin: 40px;
+    }
+
+    /* ============ testimonialsection================= */
+
+
+
+    .testmonial {
+        flex-direction: column;
+        /* background: #023047; */
+        align-items: stretch;
+    }
+
+    .testmonial .card {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .testmonial .card:last-child {
+        transform: translateX(0px);
+        margin-bottom: 0;
+    }
+
+    .testmonial .card:last-child::before {
+
+        top: -40px;
+        left: 60px
+    }
+
+    .testmonial .desktopbtn {
+        display: none;
+    }
+
+    .testmonial .mobilebtn {
+        display: block;
+        align-self: flex-end;
+    }
+
+    .testmonial .card:last-child::before {
+        height: calc(100%+80px);
+    }
+
+    .testmonial .left {
+        order: 2;
+    }
+
+    .testmonial .right {
+        order: 1;
+    }
+
+    .testmonial .mobilebtn {
+        order: 3;
+    }
+
+    .testmonial .right h2 {
+        font-size: 40px;
+        line-height: 120%;
+        margin-bottom: 20px;
+    }
+
+    .testmonial .right p {
+        display: inline
+    }
+
+    /* =================our courses=========== */
+    .courses-section .coursescards {
+        flex-direction: column;
+    }
+
+    .courses-section .coursescards .card {
+        width: 100%;
+        gap: 80px;
+        margin: 0px;
+    }
+
+    .courses-section .coursescards .card img {
+        height: 260px;
+        object-fit: cover;
+    }
+
+    .courses-section .coursescards .card .info h3 {
+        font-size: 24px;
+    }
+
+
+    .courses-section h2 {
+        font-size: 40px;
+        line-height: 120%;
+        margin-bottom: 66px;
+    }
+
+    .courses-section a {
+        right: 100px;
+    }
+
+    .courses-section .coursescards .card:last-child {
+        margin-bottom: 95px;
+    }
+
+    /* ================footer============== */
+    .footer .footerlinks {
+          grid-template-columns: 1fr 1fr;
+    }
+        .footer .footerlinks .link:last-child{
+            margin-top: 10px;
+           grid-column: 1/3;    
+        }
+}
