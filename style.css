@@ -859,4 +859,102 @@ nav.mobilenavbar,
         flex-direction: column;
     }
 
+    nav.mobilenavbar {
+
+        padding: 32px;
+    }
+
+    nav.mobilenavbar.scrolled {
+        padding: 8px 32px
+    }
+
+    .mobilemenu .closebtn {
+        right: 32px;
+    }
+
+    .herrosection .left h1 {
+        font-size: 36px;
+    }
+
+    .herrosection .right img {
+        height: 440px;
+        width: 90%;
+        transform: translateX(65px);
+    }
+
+    .herrosection .right {
+        transform: translateX(30px);
+        overflow: hidden;
+    }
+
+    .achievment h2 {
+        font-size: 30px;
+    }
+
+    .herrosection .cards {
+        margin: 0px;
+    }
+
+    .herrosection .cards .achievment {
+        margin-bottom: 40px;
+    }
+
+    .testmonial .right h2 {
+        font-size: 30px;
+    }
+
+    .testmonial .card .content {
+        font-size: 18px;
+    }
+
+    .testmonial .card .info p {
+        font-size: 14px;
+    }
+
+    .testmonial .card img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .courses-section h2 {
+        font-size: 30px;
+    }
+
+    .courses-section .wrapper {
+        padding: 0px 2px;
+    }
+
+    .courses-section .coursescards .card img {
+        height: 240px;
+    }
+
+    .courses-section .coursescards .card .info h3 {
+        font-size: 24px;
+    }
+
+    .courses-section a {
+        right: 30px;
+    }
+
+    .app h2 {
+        font-size: 30px;
+    }
+
+    .app p {
+        line-height: 18px;
+    }
+
+    .footer .footerlinks {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap:40px
+    }
+
+    .footer .footerlinks .link:last-child {
+        grid-column: 1/2;
+    }
+
+    .footer ul {
+        padding: 0px;
+    }
 }
